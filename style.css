@@ -1,0 +1,138 @@
+/* Reset léger */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2f7a4f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; /* Responsive et compatible */
+  flex-wrap: wrap;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .logo img {
+  width: 60px;       /* Taille standard du logo */
+  height: 60px;
+  object-fit: contain;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main sections */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  color: #2f7a4f;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 350px;     /* Taille standard pour image principale */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Grid pour activités et membres */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;           /* Taille standard des images dans les cartes */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Contact simple */
+#contact p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #2f7a4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
